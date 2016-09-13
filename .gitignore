@@ -1,0 +1,8 @@
+.DS_Store
+semantic/dist/
+dist/
+*.log
+*.swp
+node_modules/
+build/
+.build/

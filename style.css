@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/***** Nine Interactive *****/
+
+:root {
+  font-size:62.5%; /* 1 rem = 10px */
+}
+
+a {
+  color: #3C3C3C;
+}
+
+body {
+  font-family: brandon-grotesque, helvetica, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #3C3C3C;
+  margin: 48px auto 24px auto;
+  padding-left: 31px;
+  padding-right: 31px;
+  max-width: calc(480px + 31px + 31px);
+}
+
+.game-screenshot {
+  width: 180px;
+  height: 130px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 2.2rem;
+}
+
+.nav-logo {
+  font-family: adobe-caslon-pro, helvetica, sans-serif;
+  display: block;
+  font-size: 5.6rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  /*color: #2B95FF;*/
+  text-decoration: none;
+}
+
+.nav-link {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #3C3C3C;
+  margin-bottom: 2.6rem;
+}
+
+.hero-headline {
+  font-size: 2.0rem;
+  letter-spacing: -1px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4.0rem;
+}
+
+.hero-headline a {
+  color: #3C3C3C;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative; /** to activate positioning of before elt **/
+  margin-bottom: 30px;
+}
+
+.section-headline {
+  width: 180px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 2.4rem;
+  text-align: center;
+
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #3C3C3C;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 34px;
+}
+
+.section-headline span {
+  /* HAX: wrapper */
+  display: inline-block;
+  background-color: white;
+  z-index: 500;
+  width: 144px;
+  height: 100%;
+  position: relative;
+}
+
+.section-headline:before {
+	display: inline-block;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+  z-index: 100;
+
+  content: "";
+  height: 1px;
+  background-color: #3C3C3C;
+  width: 100%;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.game {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.dev .game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.vignettes .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.vignettes .game-title {
+  margin-top: 8px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-icons {
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social-icons a {
+  text-decoration: none;
+  margin-left: 8px;
+}
