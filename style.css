@@ -204,6 +204,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #121212;
 }
 
 .footer-social-icons {
